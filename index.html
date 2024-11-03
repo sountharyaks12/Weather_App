@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="weatherDiv">
+            <h1>
+                Weather App </h1>
+
+            <div id="user-area">
+                <input type="text" id="city" placeholder="Enter your city">
+                <br><br>
+                <button type="button" id="enterbtn" onclick="apiFunction()">Search</button>
+            </div>
+        </div>
+        <!-- <img src="./default.jpg" height="100px" width="120px" alt="rain"> -->
+        <div id="result">
+            <div class="city"></div>
+            <div class="temperature"></div>
+            <div class="humidity"></div>
+            <div class="pressure"></div>
+            <div class="windspeed"></div>
+            <div class="description"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

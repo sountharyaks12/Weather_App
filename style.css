@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96vh;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+    background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main {
+    border-radius: 10px;
+    padding: 10px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    filter: drop-shadow(2px 5px 7px rgb(38, 37, 37));
+}
+
+h1 {
+    color: rgb(21, 21, 22);
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+
+#user-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 50px;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+input:focus {
+    background-color: rgb(234, 240, 244);
+}
+
+button {
+    height: 35px;
+    width: 60px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#result {
+    padding: 10px;
+    text-align: center;
+    margin: 20px 60px;
+    color: black;
+    font-weight: bold;
+}
+
+.city,
+.temperature,
+.humidity,
+.pressure,
+.windspeed,
+.description {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.city {
+    font-size: 24px;
+}
+
+.description {
+    font-size: 24px;
+}
+
+@media screen and (max-width:480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 96vh;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+ /* background-image: none; */
+        background-image: url(./gorgeous-clouds-background-with-blue-sky-design_1017-25501.avif);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 10px;
+        /* border: 10px solid red; */
+        /* background-color: red; */
+        /* width: 400px; */
+        /* width: auto; */
+        /* margin:0 20px; */
+        /* width: 300px; */
+        background-color: white;
+        filter: drop-shadow(2px 5px 7px rgb(38, 37, 37));
+    }
+
+    h1 {
+        color: rgb(21, 21, 22);
+        font-weight: bold;
+        font-size: 35px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #user-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    input {
+        height: 30px;
+        width: 200px;
+        border-radius: 5px;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    input:focus {
+        background-color: rgb(234, 240, 244);
+    }
+
+    input::placeholder {
+        font-weight: 700;
+    }
+
+    button {
+        height: 35px;
+        width: 60px;
+        background-color: skyblue;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    #result {
+        padding: 10px;
+        text-align: center;
+        margin: 20px 60px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .city,
+    .temperature,
+    .humidity,
+    .pressure,
+    .windspeed,
+    .description {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .city {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 24px;
+    }
+}
